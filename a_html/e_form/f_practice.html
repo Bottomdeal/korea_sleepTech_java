@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>f_practice.html</title>
+</head>
+
+<body>
+  <h2>롯데 자이언츠 선수단 응원메시지 이벤트</h2>
+  <fieldset>
+    <legend>선수단을 응원하고 경품 받자!</legend>
+    <li>
+      아이디
+      <label for="id"></label>
+      <input type="text" id="id" autofocus placeholder="4 ~ 10자 사이, 공백없이" />
+    </li>
+
+    <li>
+      이메일<label for="email"></label>
+      <input type="email" id="email" required name="email" />
+    </li>
+    <li>
+      경품 목록
+      <select name="경품 목록" id="" size="1">
+        <!-- 
+          option 태그의 
+          - value 속성: 해당 항목 선택 시 서버로 넘겨줄 값 지정
+          - selected 속성: 기본 선택 값 (미지정 시 첫 번째 옵션이 설정)
+        -->
+        <option value="1">선수단 사인볼</option>
+        <option value="2">홈 레플리카 유니폼</option>
+        <option value="3">원정 레플리카 유니폼</option>
+        <option value="4">홈 경기 티켓 2매</option>
+      </select>
+    </li>
+
+    <li>
+      <label for="memo">메모</label>
+      <textarea cols="40" rows="4" placeholder="선수단에게 응원의 메시지를 보내주세요."></textarea>
+    </li>
+
+  </fieldset>
+  <fieldset>
+    <legend>이벤트 결과와 새로운 소식</legend>
+    <input type="radio" name="mailing" id="mailing_y" value="mailing_yes" />
+    <label for="mailing_y">메일 수신</label>
+    <input type="radio" name="mailing" id="mailing_n" value="mailing_no" checked />
+    <label for="mailing_n">메일 수신 안 함</label>
+  </fieldset>
+  <div id="buttons">
+    <input type="submit" value="이벤트 신청하기" />
+    <input type="reset" value="취소" />
+  </div>
+  </form>
+  </div>
+</body>
+
+</html>
